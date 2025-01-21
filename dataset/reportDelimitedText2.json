@@ -1,0 +1,32 @@
+{
+	"name": "reportDelimitedText2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkserviceDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"e_filename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().e_filename",
+					"type": "Expression"
+				},
+				"fileSystem": "reporting"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

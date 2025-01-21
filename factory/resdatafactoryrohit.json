@@ -1,0 +1,9 @@
+{
+	"name": "resdatafactoryrohit",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "51756001-c0e4-4f79-9892-533f72b8c0cd",
+		"tenantId": "ebfa4eda-3766-4fc1-8e82-02a5debccc96"
+	}
+}
